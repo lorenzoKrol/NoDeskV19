@@ -8,8 +8,8 @@ namespace test
     {
         static void Main(string[] args)
         {
-            MongoClient dbClient = new MongoClient("mongodb+srv://admin:mongo666@cluster0-z0hmx.azure.mongodb.net/test?retryWrites=true&w=majority");
-            // MongoClient dbClient = new MongoClient("mongodb+srv://mb0902:something@clustermuskan1-kig4u.azure.mongodb.net/test?retryWrites=true&w=majority");
+            MongoClient dbClient = new MongoClient("");
+            
             var dbList = dbClient.ListDatabases().ToList();
 
             var database = dbClient.GetDatabase("NoDesk");
