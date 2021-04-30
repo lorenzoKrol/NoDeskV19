@@ -12,7 +12,7 @@ namespace NoDesk
         public MongoClient dbClient;
         public Config()
         {
-            this.dbClient = new MongoClient("mongodb+srv://admin:mongo666@cluster0-z0hmx.azure.mongodb.net/test?retryWrites=true&w=majority");
+            this.dbClient = new MongoClient("");
         }
     }
 }
