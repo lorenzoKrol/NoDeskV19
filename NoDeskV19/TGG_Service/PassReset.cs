@@ -93,12 +93,12 @@ namespace NoDesk
             try
             {
                 //SMTP mailserver 
-                SmtpClient mySmtpClient = new SmtpClient("mail.inholland-project.nl");
+                SmtpClient mySmtpClient = new SmtpClient("");
 
                 // set smtp-client with basicAuthentication
                 mySmtpClient.UseDefaultCredentials = false;
                 System.Net.NetworkCredential basicAuthenticationInfo = new
-                   System.Net.NetworkCredential("nodesk@inholland-project.nl", "Pindakaas01");
+                   System.Net.NetworkCredential("");
                 mySmtpClient.Credentials = basicAuthenticationInfo;
 
                 // add from,to mailaddresses
